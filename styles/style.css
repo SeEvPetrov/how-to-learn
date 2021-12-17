@@ -6,20 +6,66 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  position: relative;
+  background-color: #f2f2f2;
+  display: flex;
+
   /* выше установили ограничения для секции */
+}
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  width: 183px;
+  height: 32px;
+  z-index: 2;
+}
+.header__title {
+  width: 730px;
+  font-size: 102px;
+  font-weight: bold;
+  line-height: 96px;
+  align-self: center;
+  position: absolute;
+  left: 64px;
+  z-index: 2;
+}
+.header__subtitle {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+  width: 388px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  z-index: 2;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__main-illustration {
+  height: 608px;
+  width: 765px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
 .header__square-pic {
   height: 568px;
   width: 568px;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  background-color: #2f80ed;
 }
 
 /* и элемента с модификатором вида ключ-значение */
