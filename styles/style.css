@@ -58,6 +58,7 @@
   height: 608px;
   width: 765px;
   position: absolute;
+  object-fit: cover;
   /* позиционируем */
   bottom: 0;
   right: 0;
@@ -75,13 +76,13 @@
 }
 /* секция с главными проблемами в обучении */
 .description {
-  width: 80%;
-  margin: 100px auto;
-  /* так как нельзя добавлять классы - отступы применяем к блоку */
   display: flex;
   justify-content: center;
+  margin: 100px 0 0;
 }
+
 .two-columns {
+  width: 80%;
   display: flex;
   justify-content: space-between;
 }
@@ -116,7 +117,8 @@
 }
 /* Цифры и факты */
 .digits {
-  margin: 0 auto 100px;
+  margin: 100px 0;
+  box-sizing: border-box;
 }
 .section-title {
   width: 60%;
@@ -165,6 +167,9 @@
 }
 /* метод Фейнмана */
 .feynman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   background-color: #f2f2f2;
   background-image: url(../images/feynman.png);
@@ -173,21 +178,20 @@
   background-size: 867px 637px;
   box-sizing: border-box;
   height: 890px;
-  padding: 100px 0 0 0;
 }
 .feynman__title {
   width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
-  margin: 0px auto 70px;
+  margin: 100px 0 70px;
   text-align: center;
 }
 .feynman__subtitle {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
 }
 .feynman__link {
@@ -204,6 +208,7 @@
 .kaufman {
   background-color: #1f1f1f;
   padding: 90px 0 90px;
+  box-sizing: border-box;
   overflow: hidden;
   position: relative;
 }
@@ -228,22 +233,25 @@
   z-index: 1;
 }
 .kaufman__triangle {
+  background: url(../images/kaufman-triangle.svg) no-repeat;
   width: 877px;
   height: 877px;
+  background-size: cover;
   position: absolute;
   top: 0;
   right: -210px;
 }
 /* footer */
 .footer {
-  padding-top: 60px;
-  padding-bottom: 40px;
+  min-height: 350px;
+  padding: 60px 0 40px;
   background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
 }
 .footer__columns {
-  min-height: 350px;
   width: 90%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -275,9 +283,11 @@
   color: white;
 }
 .footer__column-links {
+  padding: 0;
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
+  margin: 0 0 16px;
+  list-style: none;
 }
 .footer__column-link {
   text-decoration: none;
