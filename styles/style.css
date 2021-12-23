@@ -8,7 +8,12 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: "Helvetica Neue", Arial, sans-serif;
   box-sizing: border-box;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
+
 /* header */
 .header {
   height: 100vh;
@@ -62,12 +67,12 @@
 .header__main-illustration {
   height: 608px;
   width: 765px;
-  position: absolute;
   object-fit: cover;
   /* позиционируем */
+  position: absolute;
+  /* для позиционирования абсолют - обязательно указываем расположение */
   bottom: 0;
   right: 0;
-  /* для позиционирования абсолют - обязательно указываем расположение */
   z-index: 1;
 }
 
