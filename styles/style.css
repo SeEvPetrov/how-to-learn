@@ -80,6 +80,7 @@
   right: 0;
   background-color: #2f80ed;
 }
+
 /* секция с главными проблемами в обучении */
 .description {
   display: flex;
@@ -186,6 +187,7 @@
   margin-bottom: 0;
   /* убираем нижний отступ у последнего элемента */
 }
+
 /* метод Фейнмана */
 .feynman {
   display: flex;
@@ -228,6 +230,7 @@
   right: 48px;
   text-decoration: none;
 }
+
 /* Принципы обучения */
 .kaufman {
   background-color: #1f1f1f;
@@ -269,6 +272,7 @@
   top: 0;
   right: -210px;
 }
+
 /* footer */
 .footer {
   min-height: 350px;
