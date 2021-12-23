@@ -17,17 +17,20 @@
   position: relative;
   background-color: #f2f2f2;
   display: flex;
-
-  /* выше установили ограничения для секции */
 }
+
+.logo {
+  width: 183px;
+}
+
 .logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
-  width: 183px;
   height: 32px;
   z-index: 2;
 }
+
 .header__title {
   width: 730px;
   font-size: 102px;
@@ -37,6 +40,7 @@
   margin: 0 0 0 64px;
   z-index: 2;
 }
+
 .header__subtitle {
   font-size: 18px;
   font-weight: normal;
@@ -48,6 +52,7 @@
   left: 64px;
   z-index: 2;
 }
+
 .header__link {
   text-decoration: none;
   /* убираем подчеркивание */
@@ -78,14 +83,15 @@
 .description {
   display: flex;
   justify-content: center;
-  margin: 100px 0 0;
 }
 
 .two-columns {
   width: 80%;
+  margin: 100px 0 0 0;
   display: flex;
   justify-content: space-between;
 }
+
 .two-columns__brief {
   width: 175px;
   margin: 0;
@@ -94,6 +100,7 @@
   font-weight: normal;
   color: #2f80ed;
 }
+
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
@@ -101,41 +108,50 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 .two-columns__paragraph {
   margin: 0 0 30px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
+
 .two-columns__paragraph:last-of-type {
   margin-bottom: 0;
 }
+
 .two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
 }
+
 /* Цифры и факты */
 .digits {
   margin: 100px 0;
   box-sizing: border-box;
 }
+
 .section-title {
   width: 60%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin: 0 auto 20px;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
 }
+
 .section-subtitle {
   width: 60%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
+
 .table {
   width: 1100px;
   margin: 0 auto;
@@ -145,22 +161,26 @@
   list-style: none;
   padding: 0;
 }
+
 .table__cell {
   width: 250px;
   margin-top: 60px;
 }
+
 .table__heading {
   margin: 0 0 20px;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
 }
+
 .table__text {
   margin: 0 0 20px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
+
 .table__text:last-of-type {
   margin-bottom: 0;
   /* убираем нижний отступ у последнего элемента */
@@ -179,6 +199,7 @@
   box-sizing: border-box;
   height: 890px;
 }
+
 .feynman__title {
   width: 648px;
   line-height: 1.15;
@@ -187,6 +208,7 @@
   margin: 100px 0 70px;
   text-align: center;
 }
+
 .feynman__subtitle {
   line-height: 51px;
   font-size: 36px;
@@ -194,6 +216,7 @@
   margin: 0;
   text-align: center;
 }
+
 .feynman__link {
   line-height: 51px;
   font-size: 36px;
@@ -212,6 +235,7 @@
   overflow: hidden;
   position: relative;
 }
+
 .section-title_theme_dark {
   color: white;
   /* задаю position для того, чтобы сработал z-index */
@@ -219,11 +243,13 @@
   z-index: 1;
   /* теперь треугольник не будет перекрывать остальные элементы */
 }
+
 .section-subtitle_theme_dark {
   color: white;
   position: relative;
   z-index: 1;
 }
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
@@ -232,6 +258,7 @@
   margin-top: 80px;
   z-index: 1;
 }
+
 .kaufman__triangle {
   background: url(../images/kaufman-triangle.svg) no-repeat;
   width: 877px;
@@ -250,23 +277,27 @@
   justify-content: center;
   box-sizing: border-box;
 }
+
 .footer__columns {
   width: 90%;
   display: flex;
   justify-content: space-between;
 }
+
 .footer__column {
   display: flex;
   flex-direction: column;
 }
+
 .footer__column_content_copyright {
   flex-basis: 711px;
   justify-content: space-between;
 }
+
 .logo_place_footer {
-  width: 183px;
   height: 35px;
 }
+
 .footer__author {
   line-height: 25px;
   font-size: 18px;
@@ -282,6 +313,7 @@
   font-weight: bold;
   color: white;
 }
+
 .footer__column-links {
   padding: 0;
   display: flex;
@@ -289,6 +321,7 @@
   margin: 0 0 16px;
   list-style: none;
 }
+
 .footer__column-link {
   text-decoration: none;
   color: white;
@@ -296,6 +329,7 @@
   font-size: 18px;
   font-weight: normal;
 }
+
 .footer__social-icon {
   width: 16px;
   height: 16px;
