@@ -1,3 +1,5 @@
+@import url(../blocks/rotation/rotation.css);
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -18,6 +20,7 @@
   position: relative;
   background-color: #f2f2f2;
   display: flex;
+  overflow: hidden;
 }
 
 .logo {
@@ -60,6 +63,7 @@
   /* убираем подчеркивание */
   color: #2f80ed;
 }
+
 .header__link:hover {
   color: rgba(128, 124, 124, 1);
   text-decoration: underline;
@@ -84,7 +88,12 @@
   top: 64px;
   right: 0;
   background-color: #2f80ed;
+  animation: rotation 20s linear infinite;
 }
+
+/* .header__square-pic .rotation {
+  animation: rotation 20s linear infinite;
+} */
 
 /* секция с главными проблемами в обучении */
 .description {
@@ -132,6 +141,86 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
+}
+
+/* Техники обучение */
+.techniques {
+  width: 80%;
+  padding: 100px 0 0;
+  margin: 0 auto;
+}
+
+.cards {
+  width: 920px;
+  display: grid;
+  column-gap: 100px;
+  row-gap: 60px;
+  grid: 1fr 1fr/1fr 1fr 1fr;
+  margin: 60px auto 0;
+  padding: 0;
+}
+
+.cards__item {
+  list-style: none;
+  text-align: center;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  margin: 0 40px 43px;
+  border-radius: 50%;
+}
+
+.cards__title {
+  margin: 0 0 16px;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cards__description {
+  margin: 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* Видео на TED */
+
+.video {
+  transform: translateY(60px);
+  padding: 40px 0 0;
+}
+
+.video__iframes {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 0 0;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+  border: 0;
+  margin: 0 20px 0 0;
+}
+
+.video__iframe:last-of-type {
+  margin-right: 0;
+}
+
+/* Oakley */
+
+.oakley {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  padding: 160px 0 0px;
+  box-sizing: border-box;
+
+  /* margin: 100px; */
 }
 
 /* Цифры и факты */
@@ -240,9 +329,80 @@
   right: 48px;
   text-decoration: none;
 }
+
 .feynman__link:hover {
   color: rgba(128, 124, 124, 1);
   text-decoration: underline;
+}
+
+/* Салман Хан */
+
+.khan {
+  box-sizing: border-box;
+  padding: 105px 0 0;
+  background-color: #f2f2f2;
+}
+
+.khan__container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.khan__author {
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.khan__title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.khan__quote {
+  max-width: 790px;
+  margin: 50px 0 36px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__quote-author {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.khan__quote-author-subline {
+  margin: 10px 0 68px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__book-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.khan__book-pic {
+  width: 620px;
+  height: 608px;
+  margin: 0 48px 0 0;
+  object-fit: cover;
+  object-position: top left;
+}
+
+.khan__buy-link {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
 }
 
 /* Принципы обучения */
@@ -285,6 +445,35 @@
   position: absolute;
   top: 0;
   right: -210px;
+  animation: rotation 20s linear infinite;
+}
+
+/* Полезные ресурсы */
+
+.resources {
+  padding: 100px 0 217px;
+  box-sizing: border-box;
+}
+
+.resources__logo-zone {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 80px auto 0;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
+  list-style: none;
+  color: #f2f2f2;
+  text-align: center;
+  transition: opacity 1.15s ease-in-out;
+}
+
+.resources__logo:hover {
+  opacity: 0.5;
 }
 
 /* footer */
@@ -348,9 +537,11 @@
   font-size: 18px;
   font-weight: normal;
 }
+
 .footer__column-link:hover {
   color: #2f80ed;
 }
+
 .footer__social-icon {
   width: 16px;
   height: 16px;
