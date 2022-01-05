@@ -62,11 +62,11 @@
   text-decoration: none;
   /* убираем подчеркивание */
   color: #2f80ed;
+  transition: opacity 1.15s ease-in-out;
 }
 
 .header__link:hover {
-  color: rgba(128, 124, 124, 1);
-  text-decoration: underline;
+  opacity: 0.6;
 }
 
 .header__main-illustration {
@@ -90,10 +90,6 @@
   background-color: #2f80ed;
   animation: rotation 20s linear infinite;
 }
-
-/* .header__square-pic .rotation {
-  animation: rotation 20s linear infinite;
-} */
 
 /* секция с главными проблемами в обучении */
 .description {
@@ -219,8 +215,6 @@
   justify-content: center;
   padding: 160px 0 0px;
   box-sizing: border-box;
-
-  /* margin: 100px; */
 }
 
 /* Цифры и факты */
@@ -328,11 +322,11 @@
   top: 50%;
   right: 48px;
   text-decoration: none;
+  transition: opacity 1.15s ease-in-out;
 }
 
 .feynman__link:hover {
-  color: rgba(128, 124, 124, 1);
-  text-decoration: underline;
+  opacity: 0.6;
 }
 
 /* Салман Хан */
@@ -473,7 +467,7 @@
 }
 
 .resources__logo:hover {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 /* footer */
@@ -536,10 +530,11 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+  transition: opacity 1.15s ease-in-out;
 }
 
 .footer__column-link:hover {
-  color: #2f80ed;
+  opacity: 0.6;
 }
 
 .footer__social-icon {

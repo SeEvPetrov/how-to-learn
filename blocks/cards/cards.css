@@ -1,0 +1,9 @@
+.cards {
+  width: 920px;
+  display: grid;
+  column-gap: 100px;
+  row-gap: 60px;
+  grid: 1fr 1fr/1fr 1fr 1fr;
+  margin: 60px auto 0;
+  padding: 0;
+}

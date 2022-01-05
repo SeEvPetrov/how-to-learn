@@ -1,0 +1,7 @@
+.section-title_theme_dark {
+  color: white;
+  /* задаю position для того, чтобы сработал z-index */
+  position: relative;
+  z-index: 1;
+  /* теперь треугольник не будет перекрывать остальные элементы */
+}
