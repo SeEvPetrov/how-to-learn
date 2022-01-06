@@ -1,5 +1,8 @@
 .video__iframes {
   display: flex;
   justify-content: center;
-  margin: 50px 0 0 0;
+  /* Сдвигаем видео на следующий блок по брифу */
+  transform: translateY(60px);
+  /* так как по брифу отступ от subtitle 50px, а у нас сдвиг 60px, то задаем отрицательный margin */
+  margin: -10px 0 0 0;
 }
