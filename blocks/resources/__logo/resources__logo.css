@@ -5,8 +5,11 @@
   color: #f2f2f2;
   text-align: center;
   transition: opacity 1.15s ease-in-out;
+  display: flex;
+  justify-content: center;
 }
 
 .resources__logo:hover {
   opacity: 0.6;
 }
+
